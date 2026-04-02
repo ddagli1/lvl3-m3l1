@@ -44,3 +44,6 @@ class DB_Manager:
             conn.commit()
 
         print("Veri tabanı başarılı bir şekilde oluşturuldu!")
+if __name__ == '__main__':
+    manager = DB_Manager(DATABASE)
+    manager.create_tables()
